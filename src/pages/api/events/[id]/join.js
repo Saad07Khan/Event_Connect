@@ -1,5 +1,5 @@
-import connectDB from '../../../../lib/mongodb';
-import Event from '../../../../models/Event';
+import connectDB from '@/lib/mongodb';
+import Event from '@/models/Event';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {

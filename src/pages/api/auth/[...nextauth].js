@@ -4,6 +4,8 @@ import { MongoDBAdapter } from '@auth/mongodb-adapter';
 import clientPromise from '../../../lib/mongodb-adapter';
 import User from '../../../models/User';
 
+// This is a test comment to trigger a Vercel rebuild
+
 export default NextAuth({
   providers: [
     GoogleProvider({

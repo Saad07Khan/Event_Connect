@@ -1,8 +1,7 @@
 services:
-  - type: cronJob
-    name: email-scraper-job
+  - type: worker
+    name: email-scraper-worker
     env: python
-    schedule: "0 0 * * *"  # Runs daily at midnight UTC
     buildCommand: pip install -r email-scraper/requirements.txt
     startCommand: cd email-scraper && python email_scraper.py
     envVars:
